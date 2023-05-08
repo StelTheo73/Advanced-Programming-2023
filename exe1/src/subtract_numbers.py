@@ -23,6 +23,7 @@ def main():
 
         _exit = input("Exit? (y/n)").lower()
         if _exit == 'y':
+            print("Quiting...")
             break
 
 if __name__ == "__main__":
