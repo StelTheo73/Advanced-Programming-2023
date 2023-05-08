@@ -15,5 +15,10 @@ class TestSubtractNumbers(unittest.TestCase):
         subtract_numbers(5, 1)
         mock_print.assert_called_once_with("POSITIVE")
 
+    @patch("builtins.print")
+    def test_negative_result(self, mock_print):
+        subtract_numbers(5, 5)
+        mock_print.assert_called_once_with("ZERO")
+
 if __name__ == '__main__':
     unittest.main()

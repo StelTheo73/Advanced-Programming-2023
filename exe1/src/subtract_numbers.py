@@ -7,6 +7,8 @@ def subtract_numbers(num1, num2):
         print("POSITIVE")
     elif sub < 0:
         print("NEGATIVE")
+    else:
+        print("ZERO")
 
 def main():
     while True:
