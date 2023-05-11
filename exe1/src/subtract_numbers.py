@@ -1,6 +1,13 @@
 #!/usr/bin
 
+""" Simple program that subtracts two numbers and prints the result. """
+
 def subtract_numbers(num1, num2):
+    """ Subtracts two numbers and prints:
+        - POSITIVE, if the result is grater than zero,
+        - NEGATIVE, if the result is lower than zero,
+        - ZERO, if the result is equal to zero.
+    """
     sub = num1 - num2
 
     if sub > 0:
@@ -11,6 +18,9 @@ def subtract_numbers(num1, num2):
         print("ZERO")
 
 def main():
+    """ Prompts the user to give two numbers and
+        calls subtract_numbers to display the result. 
+    """
     while True:
         try:
             num1 = float(input("Enter the first number: "))
