@@ -23,8 +23,8 @@ def main():
     """
     while True:
         try:
-            num1 = float(input("Enter the first number: "))
-            num2 = float(input("Enter the second number: "))
+            num1 = int(input("Enter the first number: "))
+            num2 = int(input("Enter the second number: "))
         except ValueError:
             print("Invalid input. Please enter a number.")
             continue
