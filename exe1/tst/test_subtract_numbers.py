@@ -26,7 +26,7 @@ class TestSubtractNumbers(unittest.TestCase):
     def test_main(self, mock_print, mock_input, mock_subtract_numbers):
         main()
         mock_subtract_numbers.assert_called_with(5, 4)
-        mock_print.assert_called_once_with("Quiting...")
+        mock_print.assert_called_once_with("Quitting...")
 
     @patch("builtins.input", side_effect=["foo", 0, 0, "y"])
     @patch("builtins.print")
@@ -35,7 +35,7 @@ class TestSubtractNumbers(unittest.TestCase):
         mock_print.assert_has_calls([
             call("Invalid input. Please enter a number."),
             call("ZERO"),
-            call("Quiting...")
+            call("Quitting...")
         ])
 
     @patch("builtins.input", side_effect=[0, 0, "n", 0, 0, "y"])
@@ -46,7 +46,7 @@ class TestSubtractNumbers(unittest.TestCase):
         mock_print.assert_has_calls([
             call("ZERO"),
             call("ZERO"),
-            call("Quiting..."),
+            call("Quitting..."),
         ])
 
 if __name__ == '__main__':
